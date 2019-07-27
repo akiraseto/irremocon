@@ -7,7 +7,7 @@ class IrMagician:
         self.debug = False
         self.logs = []
         self.open(dev, timeout)
-        
+
     def set_debug(self, b):
         self.debug = b
 
@@ -25,19 +25,19 @@ class IrMagician:
     def write(self, s):
         b = s.encode('utf-8') # bytesに変換
         self.ser.write(b)
-        self.log("write=" + s)
-        
+        # self.log("write=" + s)
+
     def readline(self):
         b = self.ser.readline()
         s = b.decode('utf-8')
         self.log("read=" + s)
         return s
-        
+
     def command(self, cmd, wait=1):
         self.write(cmd)
         time.sleep(wait)
         return self.readline()
-        
+
     def read(self, num = 1):
         b = self.ser.read(num)
         return b

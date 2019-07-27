@@ -1,0 +1,61 @@
+{
+  "bridge":
+  {
+    "name": "pi",
+    "username": "B8:27:EB:4B:36:D6",
+    "port": 51821,
+    "pin": "123-45-678"
+  },
+
+  "description": "Living Room",
+
+  "accessories": [
+    {
+      "accessory": "CMD",
+      "name": "テレビ電源",
+      "on_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/tv/tv_power.json",
+      "off_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/tv/tv_power.json"
+    },
+    {
+      "accessory": "CMD",
+      "name": "テレビ入力",
+      "on_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/tv/tv_input.json",
+      "off_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/tv/tv_input.json"
+    },
+    {
+      "accessory": "CMD",
+      "name": "テレビチャンネル",
+      "on_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/tv/tv_channel.json",
+      "off_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/tv/tv_channel.json"
+    },
+    {
+      "accessory": "CMD",
+      "name": "エアコン湿度",
+      "on_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/aircon/aircon_dehumi.json",
+      "off_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/aircon/aircon_poweroff.json"
+    },
+    {
+      "accessory": "CMD",
+      "name": "エアコンエコ",
+      "on_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/aircon/aircon_eco.json",
+      "off_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/aircon/aircon_poweroff.json"
+    },
+    {
+      "accessory": "CMD",
+      "name": "エアコンオフ",
+      "on_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/aircon/aircon_poweroff.json",
+      "off_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/aircon/aircon_poweroff.json"
+    },
+    {
+      "accessory": "CMD",
+      "name": "ボーズ電源",
+      "on_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/bose/bose_power.json",
+      "off_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/bose/bose_power.json"
+    }
+  ]
+
+
+
+
+
+}
