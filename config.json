@@ -51,10 +51,14 @@
       "name": "ボーズ電源",
       "on_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/bose/bose_power.json",
       "off_cmd": "python3 /home/pi/irremocon/irload_play.py /home/pi/irremocon/bose/bose_power.json"
+    },
+    {
+      "accessory": "CMD",
+      "name": "空気チェック",
+      "on_cmd": "python3 /home/pi/airsensor/send_line.py",
+      "off_cmd": ""
     }
   ]
-
-
 
 
 
