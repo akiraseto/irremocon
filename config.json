@@ -57,7 +57,14 @@
       "name": "空気チェック",
       "on_cmd": "python3 /home/pi/airsensor/send_line.py",
       "off_cmd": ""
+    },
+    {
+      "accessory": "CMD",
+      "name": "hue_info",
+      "on_cmd": "python3 /home/pi/hue_info/connect_hue.py",
+      "off_cmd": ""
     }
+
   ]
 
 
